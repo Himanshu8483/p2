@@ -1,7 +1,7 @@
 @media (min-width:200px) and (max-width:1000px){
     #bars {
         display: block;
-        color: aqua;
+        color: #FF9933;
         position: absolute;
         right: 20px;
         z-index: 10;
@@ -50,7 +50,7 @@ form button {
         ul{
             width: 100%;
             height: 100vh;
-            background-color: #FF9933;
+            background-color:#34AD54;
             position: absolute;
             top: 80px;
             left: -100%;
@@ -69,24 +69,27 @@ form button {
 
         max-width: 100%;
         margin: auto;
-        height: 100vh;
+        height: 70vh;
 
         img {
             width: 100%;
-            height: 100vh;
+            height: 70vh;
+            background-repeat: no-repeat;
+            background-size:contain;
         }
         .homecontent {
-            font-size: 30px;
+            font-size: 25px;
             position: absolute;
             top: 200px;
             left: 20px;
             color: white;
             font-weight: 600;
             letter-spacing: 3px;
-            line-height: 70px;
+            line-height: 50px;
             
             button {
-                padding: 20px 40px;
+                margin-top: 10px;
+                padding: 10px 15px;
                 background-color: #FF9933;
                 border: 0px;
                 border-radius: 5px;
@@ -123,26 +126,138 @@ footer {
 
 #aboutsection {
 
-    max-width: 100%;
-    margin: auto;
-    height: 70vh;
-    background-image: url(img/carousel-1.jpg);
-    background-repeat: no-repeat;
-
-    img {
-        width: 100%;
+        max-width: 100%;
+        margin: auto;
         height: 70vh;
-    }
+        
+        img {
+            width: 100%;
+            height: 50vh;
+            background-size: contain;
+            zoom: 1.4;
+        }
 .topcontent {
-    display: none;
+    left: 10px;
+}            
+button {
+    padding: 10px 0px;
+    background-color: #FF9933;
+    border: 0px;
+    border-radius: 5px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+}}
+// team member section 
+#members{ 
+    display: inline;
+    justify-content: center;
+    max-width: 100%;
+    height: 300px;
+    margin: 0;
+ } 
+ #members .teamText{ 
+    display: block; 
+    justify-content: center; 
+    text-align: center; 
+    font-size: 25px; 
+    font-weight: 600;
+    padding: 10px;
+ } 
+ #members .teambox{ 
+    display: grid; 
+    grid-template-columns: auto; 
+    justify-content: center; 
+    gap: 50px; 
+    max-width: 100%;
+ } 
+ #members .teambox .box{ 
+    max-width: 90%;
+    height: 400px; 
+    justify-content: center;
+    background-color: #FF9933;
+    border: 1px solid #1b6671; 
+    text-align: center;
+ } 
+ #members .teambox .box .boxcontent{
+padding: 5%;
+font-size: 15px;
+letter-spacing: 3px;
+color:green;
+} 
+// team member section  ends
+// about section ends
+
+
+           /* our services start from here  */ 
+           #ourservice {
+            height: auto;
+           }
+            #ourservice .myheading{ 
+                padding: 10px;
+     } 
+
+                #box{  
+                    display: grid; 
+                    grid-template-columns: auto; 
+                    justify-content: center; 
+                    /* gap: 50px; */
+                } 
+
+
+
+                // product section start 
+                #main {
+                    height: auto;
+                    margin-top: 100px;
+                  }
+                  #main #mainhead {
+                    padding: 10px;
+                  }
+                  #main #mainhead .mainimg  img{
+                    height: 50px;
+                    width: 50px;
+                  }
+                  #mainbox {
+                    flex-direction: column;
+                }
+                #mainbox .mainimg img{
+                    display: flex;
+                    justify-content: center;
+                    background-size:contain;
+                    
+                    
+                }
+                #main #mainbox .mainimg {
+                    width: 100%;
+                    height: fit-content;
+                    border-radius: 50px;
+                    border: 2px solid white;
+                    background-color: white;
+                    padding: 50px 20px 0 10px;
+                    text-align: center;
+                    color: #1b6671;
+                
+
+} 
+#main #mainbox .mainimg img {
+    margin-top: 10%;
+    padding: 5%;
+    width: 20em;
+
+ }
+
 }
-}
 
 
 
 
 
-}
+
 // @media (min-width:576px) and (max-width:991px) {
 
 
@@ -155,4 +270,4 @@ footer {
 
 
 
-// }
+// 

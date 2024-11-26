@@ -156,6 +156,7 @@ form {
             font-weight: 600;
             letter-spacing: 3px;
             button {
+                margin-top: 100px;
                 padding: 20px 0px;
                 background-color: #34AD54;
                 border: 0px;
@@ -311,11 +312,11 @@ footer{
 #aboutsection {
         max-width: 100%;
         margin: auto;
-        height: 100vh;
-
+        height: 70vh;
+        
         img {
             width: 100%;
-            height: 100vh;
+            height: 70vh;
         }
     .topcontent {
         font-size: 45px;
@@ -347,4 +348,149 @@ footer{
         }
 
     }
+    
+}
+// team member section 
+#members{ 
+    width: 100%; 
+    height: 110vh; 
+ } 
+ #members .teamText{ 
+    display: block; 
+    justify-content: center; 
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: 600;
+ } 
+ #members .teambox{ 
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    justify-content: center; 
+    gap: 50px; 
+ } 
+ #members .teambox .box{ 
+    width: 450px; 
+    height: 500px; 
+    background-color: #34AD54D9;
+    border: 1px solid #34AD54D9; 
+    text-align: center;
+ } 
+ #members .teambox .box .boxcontent{
+padding: 5%;
+font-size: 15px;
+letter-spacing: 3px;
+color: #55402a;
+} 
+// team member section  ends
+// about section ends
+
+// service section start from here 
+#ourservice{ 
+    width: 100%; 
+    height: 100vh; 
+    margin-top: 100px;
+ } 
+#ourservice .myheading{ 
+    text-align: center; 
+    font-size: 25px;
+ } 
+ #box{  
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    justify-content: center; 
+    gap: 50px; 
+  
+ } 
+ #box .content{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px; 
+    height: 250px; 
+    border: 1px solid #1b6671; 
+    background-color: #EEF9FF;
+ }
+#box .content:hover  {
+    background-color: #FF9933;
+}
+ #box .content p {
+    margin: 10px;
+ }
+ #box .content p span {
+    font-size: 30px;
+    font-weight:600;
+ }
+ #box .content p i {
+// border: 2px solid #34AD54;
+// padding: 20px;
+// color: white;
+// background-color: #34AD54;
+font-size: 35px;
+ }
+
+//  produt section start from here 
+/* features start from here  */
+#main{ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%; 
+    height: 100vh; 
+    background-color: #34AD54;
+ } 
+#main #mainhead{ 
+    text-align: center; 
+    font-size: 25px;
+    color: white;
+ } 
+ #mainbox{  
+    display: grid; 
+    /* grid-template-columns: auto auto;  */
+    display: flex;
+    justify-content: center; 
+    color: white;
+
+ } 
+ #main #mainbox .mainimg {
+    width: 600px;
+    height: fit-content;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: white;
+    padding: 50px 20px 0 20px;
+    text-align: center;
+    color: #1b6671;
+    
+
+    // background-image: url(img/feature.png);
+    // background-repeat: no-repeat;
+    // background-size: 400px;
+ }
+ #main #mainbox .mainimg img {
+    margin-top: 10%;
+width: 30em;
+
+ }
+ #mainbox .maincontent{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px 0 100px;
+ }
+ #mainbox .maincontent p span {
+    font-size: 25px;
+    font-weight:550;
+ }
+
+ #mainbox .maincontent p i {
+// border: 2px solid #FF9933;
+// border-radius: 10px;
+// padding: 20px;
+// color: white;
+// background-color: #FF9933;
+font-size: 35px;
+
+    /* right: 500px; */
+    /* top: 50px; */
 }
