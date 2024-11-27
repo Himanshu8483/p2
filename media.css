@@ -1,4 +1,15 @@
 @media (min-width: 200px) and (max-width: 1000px) {
+  form {
+    width: 310px;
+    height: 45px;
+  }
+  form input {
+    font-size: 15px;
+  }
+  form button {
+    background-color: #FF9933;
+    padding: 0px 10px;
+  }
   #bars {
     display: block;
     color: #FF9933;
@@ -11,19 +22,6 @@
   }
   #checker:checked ~ .nav ul {
     left: 0;
-  }
-  form {
-    width: 310px;
-    height: 45px;
-    top: 100px;
-    left: 2px;
-  }
-  form input {
-    font-size: 15px;
-  }
-  form button {
-    background-color: #FF9933;
-    padding: 0px 10px;
   }
   #headtop .logo {
     font-size: 25px;
@@ -45,7 +43,7 @@
     transition: 0.5s;
     z-index: 1;
   }
-  .nav li {
+  .nav ul li {
     display: block;
     text-align: center;
   }
@@ -84,16 +82,6 @@
     font-weight: 600;
     letter-spacing: 2px;
   }
-  #middle {
-    display: inline;
-    justify-content: center;
-    max-width: 100%;
-    height: 300px;
-  }
-  footer .footercontent .row1 {
-    padding: 10px;
-    flex-direction: column;
-  }
   #aboutsection {
     max-width: 100%;
     margin: auto;
@@ -108,18 +96,87 @@
   #aboutsection .topcontent {
     left: 10px;
   }
-  #aboutsection button {
+  #aboutsection .topcontent button {
     padding: 10px 0px;
     background-color: #FF9933;
     border: 0px;
     border-radius: 5px;
   }
-  #aboutsection button a {
+  #aboutsection .topcontent button a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 2px;
+  }
+  #middle {
+    display: inline;
+    justify-content: center;
+    max-width: 100%;
+    height: 300px;
+  }
+  #about {
+    max-width: 100%;
+    margin: 100px 2px 0px 2px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about .about-left {
+    border: 5px solid #34AD54;
+    border-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+  }
+  #about .about-right {
+    font-size: 80%;
+  }
+  #about .about-right p {
+    padding: 10px;
+  }
+  #ourservice {
+    height: auto;
+  }
+  #ourservice .myheading {
+    padding: 10px;
+  }
+  #ourservice #box {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  #main {
+    height: auto;
+    margin-top: 100px;
+  }
+  #main #mainhead {
+    padding: 10px;
+  }
+  #main #mainbox {
+    flex-direction: column;
+  }
+  #main #mainbox .mainimg {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: white;
+    padding: 50px 20px 0 10px;
+    text-align: center;
+    color: #1b6671;
+  }
+  #main #mainbox .mainimg img {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    margin-top: 10%;
+    padding: 5%;
+    width: 20em;
   }
   #members {
     display: inline;
@@ -140,7 +197,7 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
-    gap: 50px;
+    gap: 5px;
     max-width: 100%;
   }
   #members .teambox .box {
@@ -151,58 +208,14 @@
     border: 1px solid #1b6671;
     text-align: center;
   }
-  #members .teambox .box .boxcontent {
+  #members .teambox .boxcontent {
     padding: 5%;
     font-size: 15px;
     letter-spacing: 3px;
     color: green;
   }
-  /* our services start from here  */
-  #ourservice {
-    height: auto;
-  }
-  #ourservice .myheading {
+  footer .footercontent .row1 {
     padding: 10px;
-  }
-  #box {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    /* gap: 50px; */
-  }
-  #main {
-    height: auto;
-    margin-top: 100px;
-  }
-  #main #mainhead {
-    padding: 10px;
-  }
-  #main #mainhead .mainimg img {
-    height: 50px;
-    width: 50px;
-  }
-  #mainbox {
     flex-direction: column;
-  }
-  #mainbox .mainimg img {
-    display: flex;
-    justify-content: center;
-    background-size: contain;
-  }
-  #main #mainbox .mainimg {
-    width: 100%;
-    height: -moz-fit-content;
-    height: fit-content;
-    border-radius: 50px;
-    border: 2px solid white;
-    background-color: white;
-    padding: 50px 20px 0 10px;
-    text-align: center;
-    color: #1b6671;
-  }
-  #main #mainbox .mainimg img {
-    margin-top: 10%;
-    padding: 5%;
-    width: 20em;
   }
 }/*# sourceMappingURL=media.css.map */

@@ -5,19 +5,6 @@
   box-sizing: border-box;
 }
 
-#checker {
-  display: none;
-}
-
-#bars {
-  float: right;
-  line-height: 80px;
-  margin-right: 10px;
-  font-size: 30px;
-  color: white;
-  display: none;
-}
-
 form {
   background-color: skyblue;
   border-radius: 60px;
@@ -33,7 +20,6 @@ form {
   box-shadow: 2px 3px 5px #1b6671;
   z-index: 1;
 }
-
 form input {
   flex: 1;
   border: none;
@@ -43,7 +29,6 @@ form input {
   font-size: 17px;
   letter-spacing: 1px;
 }
-
 form button {
   background-color: #FF9933;
   padding: 10px 50px;
@@ -54,11 +39,23 @@ form button {
   letter-spacing: 1px;
   cursor: pointer;
 }
-
 form .fa-magnifying-glass {
   align-self: center;
   padding: 10px 20px;
   color: tomato;
+}
+
+#checker {
+  display: none;
+}
+
+#bars {
+  float: right;
+  line-height: 80px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: white;
+  display: none;
 }
 
 #headtop {
@@ -98,16 +95,16 @@ form .fa-magnifying-glass {
   float: right;
   list-style: none;
 }
-.nav li {
+.nav ul li {
   display: inline-block;
   line-height: 80px;
 }
-.nav li a {
+.nav ul li a {
   text-decoration: none;
   color: white;
   padding: 30px 20px;
 }
-.nav li a.active, .nav li a:hover {
+.nav ul li a.active, .nav ul li a:hover {
   background-color: #FF9933;
 }
 
@@ -144,7 +141,45 @@ form .fa-magnifying-glass {
   letter-spacing: 2px;
   padding: 20px 40px;
 }
-#home .homecontent button.active, #home .homecontent button:hover {
+#home .homecontent button:hover {
+  background-color: #FF9933;
+}
+
+#aboutsection {
+  max-width: 100%;
+  margin: auto;
+  height: 70vh;
+}
+#aboutsection img {
+  width: 100%;
+  height: 70vh;
+}
+#aboutsection .topcontent {
+  font-size: 45px;
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+#aboutsection .topcontent button {
+  background-color: #34AD54;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+#aboutsection .topcontent button a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  font-weight: 520;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+#aboutsection .topcontent button.active, #aboutsection .topcontent button:hover {
   background-color: #FF9933;
 }
 
@@ -188,6 +223,177 @@ form .fa-magnifying-glass {
   text-decoration: none;
 }
 
+#about {
+  max-width: 100%;
+  margin: 10px 50px 0 50px;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+#about .about-left {
+  border: 5px solid #34AD54;
+  border-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+}
+#about .about-right {
+  margin-left: 5%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+#about .about-right h3 {
+  color: #34AD54;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+#about .about-right i {
+  font-size: 50px;
+  color: #FF9933;
+}
+#about .about-right h2 {
+  color: #34AD54;
+  letter-spacing: 2px;
+}
+#about .about-right h1 {
+  font-size: 3em;
+}
+#about .about-right h1 span {
+  color: #34AD54;
+}
+#about .about-right a {
+  text-decoration: none;
+  background-color: #06A3DA;
+  color: white;
+  padding: 10px 20px;
+  letter-spacing: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#ourservice {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+#ourservice .myheading {
+  text-align: center;
+  font-size: 25px;
+}
+#ourservice #box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 50px;
+}
+#ourservice #box .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: 250px;
+  border: 1px solid #1b6671;
+  background-color: #EEF9FF;
+}
+#ourservice #box .content p {
+  margin: 10px;
+}
+#ourservice #box .content p span {
+  font-size: 30px;
+  font-weight: 600;
+}
+#ourservice #box .content p i {
+  font-size: 35px;
+}
+#ourservice #box .content:hover {
+  background-color: #FF9933;
+}
+
+#main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: #34AD54;
+}
+#main #mainhead {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+#main #mainbox {
+  display: grid;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#main #mainbox .maincontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 100px 0 100px;
+}
+#main #mainbox .maincontent p span {
+  font-size: 25px;
+  font-weight: 550;
+}
+#main #mainbox .maincontent i {
+  font-size: 35px;
+}
+#main #mainbox .mainimg {
+  margin-top: 20px;
+  width: 600px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: white;
+  padding: 50px 20px 0 20px;
+  text-align: center;
+  color: #1b6671;
+}
+#main #mainbox .mainimg img {
+  margin-top: 10%;
+  width: 30em;
+}
+
+#members {
+  width: 100%;
+  height: 110vh;
+}
+#members .teamText {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+#members .teambox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 50px;
+}
+#members .teambox .box {
+  width: 450px;
+  height: 500px;
+  background-color: rgba(52, 173, 84, 0.8509803922);
+  border: 1px solid rgba(52, 173, 84, 0.8509803922);
+  text-align: center;
+}
+#members .teambox .box .boxcontent {
+  padding: 5%;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: #55402a;
+}
+
 footer {
   padding: 50px 0px 0px 0px;
   width: 100%;
@@ -201,7 +407,7 @@ footer .footercontent {
 footer .footercontent .icons {
   font-size: 25px;
 }
-footer .footercontent .icons i {
+footer .footercontent .icons a i {
   padding-left: 50px;
 }
 footer .footercontent .row1 {
@@ -227,7 +433,7 @@ footer .footercontent .row1 .rowleft .usefullinks ul {
 footer .footercontent .row1 .rowleft .usefullinks ul li {
   margin-bottom: 10px;
 }
-footer .footercontent .row1 .rowleft .usefullinks ul a {
+footer .footercontent .row1 .rowleft .usefullinks ul li a {
   text-decoration: none;
   color: green;
 }
@@ -268,182 +474,4 @@ footer .footercontent .row3 {
   background-color: black;
   color: white;
   background-image: url("img/footer.png");
-}
-
-#aboutsection {
-  max-width: 100%;
-  margin: auto;
-  height: 70vh;
-}
-#aboutsection img {
-  width: 100%;
-  height: 70vh;
-}
-#aboutsection .topcontent {
-  font-size: 45px;
-  position: absolute;
-  top: 350px;
-  left: 150px;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-#aboutsection .topcontent button {
-  background-color: #34AD54;
-  height: 50px;
-  width: 100px;
-  border-radius: 10px;
-  border: none;
-  margin-bottom: 20px;
-}
-#aboutsection .topcontent button a {
-  text-decoration: none;
-  font-size: 15px;
-  color: white;
-  font-weight: 520;
-  letter-spacing: 2px;
-  padding: 10px;
-}
-#aboutsection .topcontent button.active, #aboutsection .topcontent button:hover {
-  background-color: #FF9933;
-}
-
-#members {
-  width: 100%;
-  height: 110vh;
-}
-
-#members .teamText {
-  display: block;
-  justify-content: center;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-#members .teambox {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-  gap: 50px;
-}
-
-#members .teambox .box {
-  width: 450px;
-  height: 500px;
-  background-color: rgba(52, 173, 84, 0.8509803922);
-  border: 1px solid rgba(52, 173, 84, 0.8509803922);
-  text-align: center;
-}
-
-#members .teambox .box .boxcontent {
-  padding: 5%;
-  font-size: 15px;
-  letter-spacing: 3px;
-  color: #55402a;
-}
-
-#ourservice {
-  width: 100%;
-  height: 100vh;
-  margin-top: 100px;
-}
-
-#ourservice .myheading {
-  text-align: center;
-  font-size: 25px;
-}
-
-#box {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-  gap: 50px;
-}
-
-#box .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 350px;
-  height: 250px;
-  border: 1px solid #1b6671;
-  background-color: #EEF9FF;
-}
-
-#box .content:hover {
-  background-color: #FF9933;
-}
-
-#box .content p {
-  margin: 10px;
-}
-
-#box .content p span {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-#box .content p i {
-  font-size: 35px;
-}
-
-/* features start from here  */
-#main {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-  width: 100%;
-  height: 100vh;
-  background-color: #34AD54;
-}
-
-#main #mainhead {
-  text-align: center;
-  font-size: 25px;
-  color: white;
-}
-
-#mainbox {
-  display: grid;
-  /* grid-template-columns: auto auto;  */
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-
-#main #mainbox .mainimg {
-  width: 600px;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 50px;
-  border: 2px solid white;
-  background-color: white;
-  padding: 50px 20px 0 20px;
-  text-align: center;
-  color: #1b6671;
-}
-
-#main #mainbox .mainimg img {
-  margin-top: 10%;
-  width: 30em;
-}
-
-#mainbox .maincontent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 100px 0 100px;
-}
-
-#mainbox .maincontent p span {
-  font-size: 25px;
-  font-weight: 550;
-}
-
-#mainbox .maincontent p i {
-  font-size: 35px;
-  /* right: 500px; */
-  /* top: 50px; */
 }/*# sourceMappingURL=style.css.map */

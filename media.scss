@@ -1,11 +1,25 @@
 @media (min-width:200px) and (max-width:1000px){
+        // Search Bar 
+    form {
+        width: 310px;
+        height: 45px;
+
+        input {
+            font-size: 15px;
+        }
+        button {
+            background-color: #FF9933;
+            padding: 0px 10px;
+        }
+    }
+        // Search bar Ends 
+        // Checker Bars Start from here 
     #bars {
         display: block;
         color: #FF9933;
         position: absolute;
         right: 20px;
-        z-index: 10;
-        
+        z-index: 10;        
     }
     #checker {
         display: none;
@@ -13,23 +27,8 @@
     #checker:checked ~ .nav ul {
         left: 0;
     }
-    // Search Bar 
-  form {
-    width: 310px;
-    height: 45px;
-    // position: fixed;
-    top: 100px;
-    left: 2px;
-
-}
-form input {
-    font-size: 15px;
-}
-form button {
-    background-color: #FF9933;
-    padding: 0px 10px;
-}
-        
+    // Checker Bars Ends Here
+    
 // headtop part start from here 
     #headtop {
         .logo {
@@ -44,9 +43,9 @@ form button {
             display: none;
         }
     }
+    // headtop part Ends from here 
     // navbar start from here 
     .nav {
-
         ul{
             width: 100%;
             height: 100vh;
@@ -56,17 +55,16 @@ form button {
             left: -100%;
             transition: .5s;
             z-index: 1;
-        }
-        li {
-            display: block;
-            text-align: center;
+            li {
+                display: block;
+                text-align: center;
+            }
         }
     }
+        // navbar Ends from here 
 
-// home section start 
-               
-#home {
-
+// index home section start             
+    #home {
         max-width: 100%;
         margin: auto;
         height: 70vh;
@@ -102,30 +100,12 @@ form button {
                 }
             }
         }
-    }      
+    } 
+    // index Home Section Ends From Here
 
-
-// middle section start from here 
-#middle {
-    display: inline;
-    justify-content: center;
-    max-width: 100%;
-    height: 300px;
-}
-
-// footer part start from here 
-footer {
-    .footercontent .row1 {
-        padding: 10px;
-        flex-direction: column;
-    }
-}
-
-// about section 
-
-
-#aboutsection {
-
+    // Front Page of others for Every Page Start From here
+    
+    #aboutsection {
         max-width: 100%;
         margin: auto;
         height: 70vh;
@@ -136,122 +116,162 @@ footer {
             background-size: contain;
             zoom: 1.4;
         }
-.topcontent {
-    left: 10px;
-}            
-button {
-    padding: 10px 0px;
-    background-color: #FF9933;
-    border: 0px;
-    border-radius: 5px;
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 2px;
-    }
-}}
-// team member section 
-#members{ 
-    display: inline;
-    justify-content: center;
-    max-width: 100%;
-    height: 300px;
-    margin: 0;
- } 
- #members .teamText{ 
-    display: block; 
-    justify-content: center; 
-    text-align: center; 
-    font-size: 25px; 
-    font-weight: 600;
-    padding: 10px;
- } 
- #members .teambox{ 
-    display: grid; 
-    grid-template-columns: auto; 
-    justify-content: center; 
-    gap: 50px; 
-    max-width: 100%;
- } 
- #members .teambox .box{ 
-    max-width: 90%;
-    height: 400px; 
-    justify-content: center;
-    background-color: #FF9933;
-    border: 1px solid #1b6671; 
-    text-align: center;
- } 
- #members .teambox .box .boxcontent{
-padding: 5%;
-font-size: 15px;
-letter-spacing: 3px;
-color:green;
-} 
-// team member section  ends
-// about section ends
-
-
-           /* our services start from here  */ 
-           #ourservice {
-            height: auto;
-           }
-            #ourservice .myheading{ 
-                padding: 10px;
-     } 
-
-                #box{  
-                    display: grid; 
-                    grid-template-columns: auto; 
-                    justify-content: center; 
-                    /* gap: 50px; */
-                } 
-
-
-
-                // product section start 
-                #main {
-                    height: auto;
-                    margin-top: 100px;
-                  }
-                  #main #mainhead {
-                    padding: 10px;
-                  }
-                  #main #mainhead .mainimg  img{
-                    height: 50px;
-                    width: 50px;
-                  }
-                  #mainbox {
-                    flex-direction: column;
+        .topcontent {
+            left: 10px;         
+            button {
+                padding: 10px 0px;
+                background-color: #FF9933;
+                border: 0px;
+                border-radius: 5px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
                 }
-                #mainbox .mainimg img{
+            }
+        }
+    }
+    // Front Page of others Ends here
+
+// middle section start from here 
+    #middle {
+        display: inline;
+        justify-content: center;
+        max-width: 100%;
+        height: 300px;
+    }
+// middle section Ends here 
+// about home section start from Here
+    #about {
+        max-width: 100%;
+        margin: 100px 2px 0px 2px;   
+        height: max-content;
+        // margin-top: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        .about-left {
+            border: 5px solid #34AD54;
+            border-bottom: 0px;
+            display: flex;
+            justify-content: center;
+            flex-basis: 50%;
+        }
+        .about-right {
+            font-size: 80%;
+            
+            p {
+                padding: 10px;
+            }
+        }
+    }
+// about home section ends from Here
+
+    // our services start from here  
+    #ourservice {
+        height: auto;
+        .myheading{ 
+            padding: 10px;
+        } 
+        #box{  
+            display: grid; 
+            grid-template-columns: auto; 
+            justify-content: center; 
+        }
+    }
+// Our Services Ends 
+
+// product or Feature section start 
+    #main {
+        height: auto;
+        margin-top: 100px;
+
+        #mainhead {
+            padding: 10px;
+        }
+
+        #mainbox {
+            flex-direction: column;
+            .mainimg {
+                width: 100%;
+                height: fit-content;
+                border-radius: 50px;
+                border: 2px solid white;
+                background-color: white;
+                padding: 50px 20px 0 10px;
+                text-align: center;
+                color: #1b6671;
+                 img{
+                    width: 50px;
                     display: flex;
                     justify-content: center;
                     background-size:contain;
-                    
-                    
+                    margin-top: 10%;
+                    padding: 5%;
+                    width: 20em;    
                 }
-                #main #mainbox .mainimg {
-                    width: 100%;
-                    height: fit-content;
-                    border-radius: 50px;
-                    border: 2px solid white;
-                    background-color: white;
-                    padding: 50px 20px 0 10px;
-                    text-align: center;
-                    color: #1b6671;
-                
+            }
+        }
+    }
+    // product or Feature section Ends Here
 
-} 
-#main #mainbox .mainimg img {
-    margin-top: 10%;
-    padding: 5%;
-    width: 20em;
+    // about section Start From Here
+    #members{ 
+        display: inline;
+        justify-content: center;
+        max-width: 100%;
+        height: 300px;
+        margin: 0;
+        .teamText{ 
+            display: block; 
+            justify-content: center; 
+            text-align: center; 
+            font-size: 25px; 
+            font-weight: 600;
+            padding: 10px;
+        }
+        .teambox{ 
+            display: grid; 
+            grid-template-columns: auto; 
+            justify-content: center; 
+            gap: 5px; 
+            max-width: 100%;
 
- }
+            .box{ 
+                max-width: 90%;
+                height: 400px; 
+                justify-content: center;
+                background-color: #FF9933;
+                border: 1px solid #1b6671; 
+                text-align: center;
+                } 
+                .boxcontent{
+                    padding: 5%;
+                    font-size: 15px;
+                    letter-spacing: 3px;
+                    color:green;
+                }
+            }
+        }
+// about section ends here
+
+// footer part start from here 
+    footer {
+        .footercontent .row1 {
+            padding: 10px;
+            flex-direction: column;
+        }
+    }
+
+
+
+
+
 
 }
+                
 
 
 
@@ -259,15 +279,3 @@ color:green;
 
 
 // @media (min-width:576px) and (max-width:991px) {
-
-
-
-
-
-
-
-
-
-
-
-// 
