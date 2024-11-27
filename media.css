@@ -53,12 +53,11 @@
   }
   #home {
     max-width: 100%;
-    margin: auto;
-    height: 70vh;
+    height: 60vh;
   }
   #home img {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -68,16 +67,17 @@
     top: 200px;
     left: 20px;
     color: white;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 3px;
-    line-height: 50px;
+    line-height: 40px;
   }
   #home .homecontent button {
     margin-top: 10px;
-    padding: 10px 15px;
     background-color: #FF9933;
     border: 0px;
     border-radius: 5px;
+    padding: 15px 0;
   }
   #home .homecontent button a {
     text-decoration: none;
@@ -89,25 +89,34 @@
   #aboutsection {
     max-width: 100%;
     margin: auto;
-    height: 70vh;
+    height: 35vh;
   }
   #aboutsection img {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     background-size: contain;
-    zoom: 1.4;
+    zoom: 1.2;
   }
   #aboutsection .topcontent {
     left: 10px;
+    font-size: 25px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 50px;
   }
   #aboutsection .topcontent h1 {
-    font-size: 45px;
+    font-size: 30px;
   }
   #aboutsection .topcontent button {
-    padding: 10px 0px;
+    padding: 0px 0px;
     background-color: #FF9933;
     border: 0px;
     border-radius: 5px;
+    margin: 0;
   }
   #aboutsection .topcontent button a {
     text-decoration: none;
@@ -115,6 +124,8 @@
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
   }
   #middle {
     display: inline;
@@ -154,6 +165,13 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+  }
+  #outerbox {
+    background-image: linear-gradient(rgba(5, 47, 18, 0.5), rgba(0, 0, 0, 0.3)), url(img/testimonial.jpg);
+  }
+  #outerbox .innerbox .photo {
+    width: 100px;
+    height: 100px;
   }
   #main {
     height: auto;

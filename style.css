@@ -6,7 +6,7 @@
 }
 
 form {
-  background-color: skyblue;
+  background-color: whitesmoke;
   border-radius: 60px;
   width: 550px;
   height: 55px;
@@ -25,8 +25,8 @@ form input {
   border: none;
   outline: none;
   background-color: transparent;
-  color: white;
-  font-size: 17px;
+  color: #1b6671;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 form button {
@@ -38,6 +38,12 @@ form button {
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
+  font-size: 17px;
+}
+form button:hover {
+  background-color: #34AD54;
+  color: #1b6671;
+  font-size: 20px;
 }
 form .fa-magnifying-glass {
   align-self: center;
@@ -85,6 +91,9 @@ form .fa-magnifying-glass {
   margin: 10px;
   color: #34AD54;
 }
+#headtop .icon a:hover {
+  font-size: 35px;
+}
 
 .nav {
   width: 100%;
@@ -109,6 +118,8 @@ form .fa-magnifying-glass {
 }
 .nav ul li a.active, .nav ul li a:hover {
   background-color: #FF9933;
+  color: #1b6671;
+  font-weight: 550;
 }
 
 #home {
@@ -147,6 +158,9 @@ form .fa-magnifying-glass {
 #home .homecontent button:hover {
   background-color: #FF9933;
 }
+#home .homecontent button:hover a:hover {
+  color: #1b6671;
+}
 
 #aboutsection {
   max-width: 100%;
@@ -184,6 +198,9 @@ form .fa-magnifying-glass {
 }
 #aboutsection .topcontent button.active, #aboutsection .topcontent button:hover {
   background-color: #FF9933;
+}
+#aboutsection .topcontent button.active a:hover, #aboutsection .topcontent button:hover a:hover {
+  color: #1b6671;
 }
 
 #middle {
@@ -315,6 +332,45 @@ form .fa-magnifying-glass {
 }
 #ourservice #box .content:hover {
   background-color: #FF9933;
+  color: #1b6671;
+}
+
+#outerbox {
+  margin: 2% 0 2% 0;
+  max-width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 47, 18, 0.5), rgba(0, 0, 0, 0.3)), url(img/testimonial.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#outerbox .innerbox {
+  background-image: linear-gradient(rgba(5, 47, 18, 0.5), rgba(0, 0, 0, 0.3)), url(img/carousel-1.jpg);
+  max-width: 60%;
+  border-radius: 5%;
+  height: -moz-max-content;
+  height: max-content;
+}
+#outerbox .innerbox .photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(img/testimonial-1.jpg);
+  background-size: cover;
+  margin: 5%;
+  border: 5px solid #34AD54;
+}
+#outerbox .innerbox .text {
+  margin: 5%;
+  line-height: 30px;
+  color: white;
+  letter-spacing: 0.8px;
+}
+#outerbox .innerbox .text h2 {
+  padding-top: 2%;
+  color: #34AD54;
 }
 
 #main {
@@ -386,7 +442,7 @@ form .fa-magnifying-glass {
 #members .teambox .box {
   width: 450px;
   height: 500px;
-  background-color: rgba(52, 173, 84, 0.8509803922);
+  background-color: #34AD54;
   border: 1px solid rgba(52, 173, 84, 0.8509803922);
   text-align: center;
 }
@@ -394,7 +450,11 @@ form .fa-magnifying-glass {
   padding: 5%;
   font-size: 15px;
   letter-spacing: 3px;
-  color: #55402a;
+  color: black;
+}
+#members .teambox .box .boxcontent:hover {
+  color: white;
+  font-size: 17px;
 }
 
 footer {
@@ -412,6 +472,10 @@ footer .footercontent .icons {
 }
 footer .footercontent .icons a i {
   padding-left: 50px;
+  color: black;
+}
+footer .footercontent .icons a i:hover {
+  font-size: 28px;
 }
 footer .footercontent .row1 {
   width: 100%;
@@ -443,7 +507,7 @@ footer .footercontent .row1 .rowleft .usefullinks ul li a {
 footer .footercontent .row1 .rowright {
   flex-basis: 40%;
   border-radius: 10px;
-  background-color: #1b6671;
+  background-color: #34AD54;
   color: white;
   letter-spacing: 3px;
   font-size: 20px;
@@ -453,9 +517,9 @@ footer .footercontent .row1 .rowright p {
   margin-top: 50px;
 }
 footer .footercontent .row1 .rowright button {
-  background-color: #34AD54;
+  background-color: #FF9933;
   height: 50px;
-  width: 100px;
+  width: 120px;
   border-radius: 10px;
   border: none;
   margin-bottom: 20px;
@@ -463,10 +527,16 @@ footer .footercontent .row1 .rowright button {
 footer .footercontent .row1 .rowright button a {
   text-decoration: none;
   font-size: 15px;
-  color: white;
+  color: #1b6671;
   font-weight: 520;
   letter-spacing: 2px;
   padding: 10px;
+}
+footer .footercontent .row1 .rowright button:hover {
+  background-color: tomato;
+}
+footer .footercontent .row1 .rowright button:hover a {
+  font-size: 17px;
 }
 footer .footercontent .row3 {
   width: 100%;

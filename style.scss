@@ -10,7 +10,7 @@
 
 // search bar 
 form {
-    background-color: skyblue;
+    background-color: whitesmoke;
     border-radius: 60px;
     width: 550px;
     height: 55px;
@@ -29,8 +29,8 @@ form {
         border: none;
         outline: none;
         background-color: transparent;
-        color: white;
-        font-size: 17px;
+        color: #1b6671;
+        font-size: 18px;
         letter-spacing: 1px;
     }
   
@@ -43,6 +43,12 @@ form {
         color: #fff;
         letter-spacing: 1px;
         cursor: pointer;
+        font-size: 17px;
+    }
+    button:hover {
+        background-color: #34AD54;
+        color: #1b6671;
+        font-size: 20px;
     }
   
     .fa-magnifying-glass {
@@ -94,6 +100,9 @@ form {
             margin: 10px;
             color: #34AD54;
         }
+        a:hover {
+            font-size: 35px;
+        }
     }
 }
 // headtop part start from here 
@@ -121,6 +130,8 @@ form {
             }
             a.active, a:hover  {
                 background-color: #FF9933;
+                color: #1b6671;
+                font-weight: 550;
             }       
         }
     }
@@ -162,6 +173,9 @@ form {
         }
         button:hover {
             background-color: #FF9933  ;
+            a:hover {
+            color: #1b6671;
+            }
         }
     }
 }   
@@ -204,6 +218,9 @@ form {
     }
     button.active, button:hover {
         background-color: #FF9933  ;
+        a:hover {
+            color: #1b6671;
+        }
     }
 
 }
@@ -346,9 +363,51 @@ form {
         }
         .content:hover  {
             background-color: #FF9933;
+            color: #1b6671;
         }
     }
 }
+// client part start from here 
+#outerbox {
+    margin: 2% 0 2% 0;
+    max-width: 100%;
+    height: 90vh;
+        background-image:linear-gradient(rgba(5, 47, 18, 0.5),rgba(0, 0, 0, 0.3)), url(img/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .innerbox {
+        background-image:linear-gradient(rgba(5, 47, 18, 0.5),rgba(0, 0, 0, 0.3)), url(img/carousel-1.jpg);
+        max-width:60%;
+        border-radius: 5%;
+        height: max-content;
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url(img/testimonial-1.jpg);
+            background-size: cover;
+            margin: 5%;
+            border: 5px solid #34AD54;
+
+        }
+        .text {
+            margin: 5%;
+            line-height: 30px;
+            color:white;
+            letter-spacing: 0.8px;
+            h2 {
+                padding-top: 2%;
+                color: #34AD54
+            }
+        }
+
+    }
+}
+
+// client section ended
 // service section Ends here
 
 //  produt or features section start from here 
@@ -422,7 +481,7 @@ form {
         .box{ 
             width: 450px; 
             height: 500px; 
-            background-color: #34AD54D9;
+            background-color: #34AD54;
             border: 1px solid #34AD54D9; 
             text-align: center;
 
@@ -430,8 +489,12 @@ form {
                 padding: 5%;
                 font-size: 15px;
                 letter-spacing: 3px;
-                color: #55402a;
+                color: black;
             } 
+            .boxcontent:hover {
+                color: white;
+                font-size: 17px;
+            }
         }
     }
 }
@@ -448,9 +511,12 @@ footer{
         margin: auto;
         .icons {
             font-size: 25px;
-
             a i {
                 padding-left: 50px;
+                color: black;
+            }
+            a i:hover {
+                font-size: 28px;
             }
 
         }
@@ -484,7 +550,7 @@ footer{
             .rowright {
                 flex-basis: 40%;
                 border-radius: 10px;
-                background-color: #1b6671;
+                background-color:#34AD54;
                 color: white;
                 letter-spacing: 3px;
                 font-size: 20px;
@@ -493,19 +559,25 @@ footer{
                     margin-top: 50px;
                 }
                 button {
-                    background-color:#34AD54;   
+                    background-color:#FF9933;   
                     height: 50px;
-                    width: 100px;
+                    width: 120px;
                     border-radius: 10px;
                     border: none;
                     margin-bottom: 20px;
                     a {
                         text-decoration: none;
                         font-size: 15px;
-                        color: white;
+                        color: #1b6671;
                         font-weight: 520;
                         letter-spacing: 2px;
                         padding: 10px;
+                    }
+                }
+                button:hover {
+                    background-color:tomato;
+                    a {
+                    font-size: 17px;
                     }
                 }
             }
