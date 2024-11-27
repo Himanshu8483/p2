@@ -2,6 +2,7 @@
   form {
     width: 310px;
     height: 45px;
+    z-index: 0;
   }
   form input {
     font-size: 15px;
@@ -32,6 +33,9 @@
   }
   #headtop .icon {
     display: none;
+  }
+  .nav {
+    position: static;
   }
   .nav ul {
     width: 100%;
@@ -96,6 +100,9 @@
   #aboutsection .topcontent {
     left: 10px;
   }
+  #aboutsection .topcontent h1 {
+    font-size: 45px;
+  }
   #aboutsection .topcontent button {
     padding: 10px 0px;
     background-color: #FF9933;
@@ -105,7 +112,7 @@
   #aboutsection .topcontent button a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
   }

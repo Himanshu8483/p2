@@ -3,6 +3,7 @@
     form {
         width: 310px;
         height: 45px;
+        z-index: 0;
 
         input {
             font-size: 15px;
@@ -46,6 +47,7 @@
     // headtop part Ends from here 
     // navbar start from here 
     .nav {
+        position: static;
         ul{
             width: 100%;
             height: 100vh;
@@ -117,7 +119,10 @@
             zoom: 1.4;
         }
         .topcontent {
-            left: 10px;         
+            left: 10px; 
+            h1 {
+                font-size: 45px;
+            }        
             button {
                 padding: 10px 0px;
                 background-color: #FF9933;
@@ -126,7 +131,7 @@
                 a {
                     text-decoration: none;
                     color: white;
-                    font-size: 16px;
+                    font-size: 12px;
                     font-weight: 600;
                     letter-spacing: 2px;
                 }

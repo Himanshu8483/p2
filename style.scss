@@ -16,13 +16,13 @@ form {
     height: 55px;
     display: flex;
     border: 2px solid #FF9933;
-    position: absolute;
+    position:absolute;
     top: 100px;
     left: 20px;
     font-size: medium;
     color: white;
     box-shadow: 2px 3px 5px #1b6671;
-    z-index: 1;
+    z-index: 2;
   
     input {
         flex: 1;
@@ -102,6 +102,9 @@ form {
     width: 100%;
     height: 80px;
     background-color: #34AD54;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
 
     ul {
         float: right;
