@@ -1,16 +1,17 @@
-@media (min-width:200px) and (max-width:1000px){
+@media (min-width:200px) and (max-width:1024px){
         // Search Bar 
     form {
-        width: 310px;
+        width:70%;
         height: 45px;
         z-index: 0;
 
         input {
-            font-size: 15px;
+            font-size: 12px;
         }
         button {
             background-color: #FF9933;
-            padding: 0px 10px;
+            padding: 0px 20px;
+            font-size: 12px;
         }
     }
         // Search bar Ends 
@@ -33,7 +34,7 @@
 // headtop part start from here 
     #headtop {
         .logo {
-            font-size: 25px;
+            font-size: 120%;
             padding-left: 0px;
         }
         .contact {
@@ -68,19 +69,10 @@
 // index home section start             
     #home {
         max-width: 100%;
-        height: 60vh;
-
-        img {
-            width: 100%;
-            height: 60vh;
-            background-repeat: no-repeat;
-            background-size:contain;
-        }
+        height:max-content;
         .homecontent {
             font-size: 25px;
-            position: absolute;
-            top: 200px;
-            left: 20px;
+            padding: 20%;
             color: white;
             font-size: 20px;
             font-weight: 600;
@@ -109,21 +101,13 @@
     // Front Page of others for Every Page Start From here
     #aboutsection {
         max-width: 100%;
-        margin: auto;
-        height: 35vh;
-        
-        img {
-            width: 100%;
-            height: 30vh;
-            background-size: contain;
-            zoom: 1.2;
-        }
+        height: max-content;
+        background-size:auto;
+
         .topcontent {
             left: 10px; 
             font-size: 25px;
-            position: absolute;
-            top: 200px;
-            left: 20px;
+            padding: 15%;
             color: white;
             font-weight: 600;
             letter-spacing: 3px;
@@ -132,19 +116,12 @@
                 font-size: 30px;
             }        
             button {
-                padding: 0px 0px;
                 background-color: #FF9933;
-                border: 0px;
-                border-radius: 5px;
-                margin: 0;
                 a {
                     text-decoration: none;
                     color: white;
                     font-size: 12px;
-                    font-weight: 600;
                     letter-spacing: 2px;
-                    padding: 0;
-                    margin: 0;
                 }
             }
         }
@@ -154,9 +131,6 @@
 // middle section start from here 
     #middle {
         display: inline;
-        justify-content: center;
-        max-width: 100%;
-        height: 300px;
     }
 // middle section Ends here 
 // about home section start from Here
@@ -173,6 +147,9 @@
             display: flex;
             justify-content: center;
             flex-basis: 50%;
+            img {
+                max-width: 90%;
+            }
         }
         .about-right {
             font-size: 80%;
@@ -198,7 +175,7 @@
     }
     // client part start from here 
     #outerbox {
-        background-image:linear-gradient(rgba(5, 47, 18, 0.5),rgba(0, 0, 0, 0.3)), url(img/testimonial.jpg);
+        margin: 5% 0;
         .innerbox .photo {
             width: 100px;
             height: 100px;
@@ -280,6 +257,19 @@
             }
         }
 // about section ends here
+// page section start from here 
+#page {
+    margin: 5% 7%;
+    width: 80%; 
+    height:fit-content;
+    .outerbox {
+        display: grid; 
+        grid-template-columns: auto; 
+        gap: 20px;
+
+    }
+}
+        // page section ends from here 
 
 // footer part start from here 
     footer {
