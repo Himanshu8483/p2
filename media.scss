@@ -164,22 +164,33 @@
     // our services start from here  
     #ourservice {
         height: auto;
+        
         .myheading{ 
             padding: 10px;
         } 
         #box{  
             display: grid; 
             grid-template-columns: auto; 
-            justify-content: center; 
+            // justify-content: center; 
+            width: 80%;  
+            margin-left: 10%;
+            p {
+                font-size: 80%;
+                padding:0 10%;
+            }    
         }
     }
     // client part start from here 
     #outerbox {
         margin: 5% 0;
-        .innerbox .photo {
-            width: 100px;
-            height: 100px;
-        }
+        .innerbox 
+            .text {
+                line-height: 1.5;
+            }
+            .photo {
+                width: 100px;
+                height: 100px;            
+            }
     }
     // client section ended
 // Our Services Ends 
@@ -197,21 +208,8 @@
             flex-direction: column;
             .mainimg {
                 width: 100%;
-                height: fit-content;
-                border-radius: 50px;
-                border: 2px solid white;
-                background-color: white;
-                padding: 50px 20px 0 10px;
-                text-align: center;
-                color: #1b6671;
                  img{
-                    width: 50px;
-                    display: flex;
-                    justify-content: center;
-                    background-size:contain;
-                    margin-top: 10%;
-                    padding: 5%;
-                    width: 20em;    
+                    width: 100%;
                 }
             }
         }
@@ -238,11 +236,10 @@
             grid-template-columns: auto; 
             justify-content: center; 
             gap: 5px; 
-            max-width: 100%;
 
             .box{ 
-                max-width: 90%;
-                height: 400px; 
+                width: 300px;    
+                height: 350px;
                 justify-content: center;
                 background-color: #FF9933;
                 border: 1px solid #1b6671; 
