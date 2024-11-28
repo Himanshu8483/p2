@@ -24,7 +24,6 @@ form {
     input {
         flex: 1;
         border: none;
-        outline: none;
         background-color: transparent;
         color: #1b6671;
         font-size: 18px;
@@ -36,7 +35,6 @@ form {
         padding: 10px 50px;
         border-radius: 60px;
         border: none;
-        outline: none;
         color: #fff;
         letter-spacing: 1px;
         cursor: pointer;
@@ -54,17 +52,13 @@ form {
         color: tomato;
     }
 }
-// Search Bar Ends Here s
+// Search Bar Ends Here
+
+// Checkbox bars part start from here 
 #checker {
     display: none;
 }
-// Checkbox bars part start from here 
 #bars {
-    float: right;
-    line-height: 80px;
-    margin-right: 10px;
-    font-size: 30px;
-    color: white;
     display: none;
 }
 // Checkbox bars part ends here 

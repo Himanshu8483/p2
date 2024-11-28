@@ -23,7 +23,6 @@ form {
 form input {
   flex: 1;
   border: none;
-  outline: none;
   background-color: transparent;
   color: #1b6671;
   font-size: 18px;
@@ -34,7 +33,6 @@ form button {
   padding: 10px 50px;
   border-radius: 60px;
   border: none;
-  outline: none;
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
@@ -56,11 +54,6 @@ form .fa-magnifying-glass {
 }
 
 #bars {
-  float: right;
-  line-height: 80px;
-  margin-right: 10px;
-  font-size: 30px;
-  color: white;
   display: none;
 }
 

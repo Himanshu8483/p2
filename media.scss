@@ -22,10 +22,9 @@
         color: #FF9933;
         position: absolute;
         right: 20px;
+        line-height: 80px;
+        font-size: 35px;
         z-index: 10;        
-    }
-    #checker {
-        display: none;
     }
     #checker:checked ~ .nav ul {
         left: 0;
@@ -57,7 +56,7 @@
             position: absolute;
             top: 80px;
             left: -100%;
-            transition: .5s;
+            transition: .7s;
             z-index: 1;
             li {
                 display: block;
@@ -172,7 +171,6 @@
         #box{  
             display: grid; 
             grid-template-columns: auto; 
-            // justify-content: center; 
             width: 80%;  
             margin-left: 10%;
             p {
