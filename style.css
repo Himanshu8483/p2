@@ -84,7 +84,7 @@ form .fa-magnifying-glass {
   margin: 10px;
   color: #34AD54;
 }
-#headtop a:hover {
+#headtop .icon a:hover {
   font-size: 27px;
 }
 
