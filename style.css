@@ -23,6 +23,7 @@ form {
 form input {
   flex: 1;
   border: none;
+  outline: none;
   background-color: transparent;
   color: #1b6671;
   font-size: 18px;
@@ -84,7 +85,7 @@ form .fa-magnifying-glass {
   margin: 10px;
   color: #34AD54;
 }
-#headtop .icon a:hover {
+#headtop a:hover {
   font-size: 27px;
 }
 
