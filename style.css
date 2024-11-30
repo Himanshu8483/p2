@@ -23,7 +23,6 @@ form {
 form input {
   flex: 1;
   border: none;
-  outline: none;
   background-color: transparent;
   color: #1b6671;
   font-size: 18px;
